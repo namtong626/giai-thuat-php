@@ -1,0 +1,8 @@
+- Trong một cây nhị phân full binary , mỗi node bên trong có  hai nodes con, 
+ngoại trừ các leaf node không có node con. 
+Do đó, tổng số  nodes trong full binary tree có n nodes bên trong là 2n + 1, trong đó +1 là root nodes.
+
+- Vì mỗi node bên trong có hai nodes con, mỗi nodes bên trong có  2 leaf nodes. 
+Do đó, tổng số  leaf node trong một cây nhị phân đầy đủ có n nodes bên trong là 2n * 2 = 2^(n+1).
+
+=> đáp án: 2^(n+1)

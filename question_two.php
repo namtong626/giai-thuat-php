@@ -1,26 +1,38 @@
 <?php
-$n = rand(1, pow(10, 5));
-$p = rand(0, $n - 1);
+$buyers = rand(1, pow(10, 5));
+$position = rand(0, $buyers - 1);
 
 $numberOfTickets = pow(10, 9);
 
 $tickets = [];
 
-for ($i = 0; $i < $n; $i++) {
+for ($i = 0; $i < $buyers; $i++) {
     $tickets[] = rand(1, $numberOfTickets);
 }
 
-$totalOfP = $tickets[$p];
+// $tickets = [5, 5, 2, 3];
+// $position = 3;
+$ticketToBuy = $tickets[$position];
 
-sort($tickets);
+$time = 0;
 
-$total = 0;
+while ($ticketToBuy > 0) {
+    if ($position == 0) {
+        $ticketToBuy--;
+    }
 
-for ($i = 0; $i < $n && $totalOfP > 0; $i++) {
-    $count = min($totalOfP, $tickets[$i]);
-    $total += $count * ($n - $i);
-    $totalOfP -= $count;
+    $current = array_shift($tickets); 
+    if ($current - 1 > 0) {
+        array_push($tickets, $current - 1); 
+    }
+
+    $position--; 
+    if ($position < 0) {
+        $position = count($tickets) - 1; 
+    }
+
+    $time++; 
+    
 }
 
-
-echo $total . PHP_EOL;
+echo $time . PHP_EOL;

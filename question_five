@@ -1,0 +1,8 @@
+1. XML
+    đúng vì XML thường được sử dụng để trao đổi data giữa các hệ thống qua internet. XML được định dạng linh hoạt cho phép tạo các tags tùy chỉnh để mô tả dữ liệu.
+2. JSON
+    đúng vì JDON là một định dạng trao đổi dữ liệu nhẹ, dễ đọc và ghi. Nó được sử dụng rộng rãi trong các ứng dụng web để truyền dữ liệu giữa server và client
+3. CSV
+  đúng vì CSV là định dạng tệp được sử dụng để lưu trữ dữ liệu dạng bảng, chẳng hạn như spreadsheet db table. Nó bao gồm các hàng dữ liệu, mỗi hàng được phân tách bằng dấu phẩy.
+
+=> đáp án: 1, 2 ,3

@@ -1,0 +1,17 @@
+1. URIs should never be changed: 
+    sai vì URIs luôn có thể thay đổi chẳng hạn như thay đổi tài nguyên, thay đổi cấu hình server, ..
+2. URIs must be constructed by the client: 
+    sai vì URIs được khai báo trong server để  nhất quán và có ý nghĩa
+3. URIs should be short in length: 
+    đúng vì URIs ko quá dẽ sẽ dễ  nhớ, dễ đọc 
+4. URIs should be case-sensitive: 
+    sai vì URIs mặc định là case-insensitive nếu để case-sensitive, trình duyệt trả về case-insensitve
+5. HTTP verbs should be used instead of operation names in URIs:
+    đúng vì URIs sẽ trông ấn tượng hơn là 1 operation names dài ví dụ /users với method post/get thay vì /user/save và /user/ceate
+6. Use spaces when designing a URI
+    sai vì spaces ko được phép dùng trong URI, URI sẽ thường sử dụng dấu '-' hoặc '_' thay thế
+7. Redirection must be used if a change in URI is required
+    đúng vì nó giúp đánh dấu trang cũ, có thể quay lại  thay vì phải mở tab mới
+
+=> đáp án: 3, 5, 7
+

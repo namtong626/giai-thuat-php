@@ -1,4 +1,5 @@
 <?php
+
 $k = rand(1, pow(10, 9));
 $n = rand(1, pow(10, 5));
 
@@ -20,3 +21,4 @@ if (array_sum($maxPointArr) > $k)
 
 
 echo count($maxPointArr) . PHP_EOL;
+
