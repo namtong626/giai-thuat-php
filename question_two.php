@@ -27,12 +27,12 @@ while ($ticketToBuy > 0) {
     }
 
     $position--; 
+
     if ($position < 0) {
         $position = count($tickets) - 1; 
     }
 
-    $time++; 
-    
+    $time++;    
 }
 
 echo $time . PHP_EOL;

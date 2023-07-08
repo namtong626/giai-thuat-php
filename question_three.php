@@ -8,7 +8,6 @@ $stocksProfits = [];
 for ($i = 0; $i < $stocksProfitSize; $i++) {
     $stocksProfits[] = rand(0, $target);
 }
-
 // $stocksProfits = [6, 6, 3, 9, 3, 5, 1];
 // $target = 12;
 

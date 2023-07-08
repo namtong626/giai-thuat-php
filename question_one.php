@@ -19,6 +19,5 @@ foreach ($costs as $cost)
 if (array_sum($maxPointArr) > $k)
     unset($maxPointArr[count($maxPointArr) - 1]);
 
-
 echo count($maxPointArr) . PHP_EOL;
 

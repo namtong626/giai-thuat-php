@@ -39,6 +39,7 @@ print_r($arr);
 buildHeap($arr, $n);
 
 echo "After max_heap: ";
+
 print_r($arr);
 
 // Anwser : 10, 8, 7, 3, 2, 1, 5
